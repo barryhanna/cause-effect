@@ -38,10 +38,10 @@ function makeNameList() {
 		nameListItem.innerHTML = `<p>${person.name}</p>`;
 		nameListItem.addEventListener('click', personItem => {
 			const detailsPane = document.getElementById('details');
-			detailsPane.innerHTML = `<p>Name: ${person.name}</p>
-							<p>Address: ${person.address}</p>
-							<p>Age: ${person.age}</p>
-							<p>Email: ${person.email}</p>`;
+			detailsPane.innerHTML = `<p><span>Name:</span> ${person.name}</p>
+							<p><span>Address:</span> ${person.address}</p>
+							<p><span>Age: </span>${person.age}</p>
+							<p><span>Email: </span>${person.email}</p>`;
 		});
 		nameList.push(nameListItem);
 	});
